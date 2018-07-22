@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.hzyc.zcm.demo_08.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="弹窗按钮"
+        android:id="@+id/alertDialog"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="日期弹窗"
+        android:id="@+id/datePickerDialog"
+        android:layout_below="@+id/alertDialog"
+        android:layout_alignRight="@+id/timePickerDialog"
+        android:layout_alignEnd="@+id/timePickerDialog" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="时间弹窗"
+        android:id="@+id/timePickerDialog"
+        android:layout_below="@+id/datePickerDialog"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="进度弹窗"
+        android:id="@+id/processDialog"
+        android:layout_below="@+id/timePickerDialog"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
